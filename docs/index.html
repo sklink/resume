@@ -12,13 +12,21 @@
   <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
   <link href="./build.css" rel="stylesheet">
   <title>Matt Doak — Resume</title>
+
+  <style>
+    @media print {
+      .h-letter {
+        height: 1270px;
+      }
+    }
+  </style>
 </head>
 
 <body>
   <main class="font-firago hyphens-manual">
 
     <!-- Page -->
-    <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white">
+    <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-a4 xsm:p-8 sm:p-9 md:p-16 bg-white h-letter">
 
       <!-- Name -->
       <header class="flex items-center mb-8 md:mb-11">
@@ -70,6 +78,44 @@
             <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
               EXPERIENCE
             </h2>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  <a href="https://norwestcoop.ca" target="_blank" class="group">
+                    HELO Financial
+                    <span
+                            class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                  </a>
+                </h3>
+                <p class="leading-normal text-md text-gray-650">
+                  2021 – Present | Contract
+                </p>
+              </header>
+              <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6 mt-1.5 mb-0.5">
+                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  React.js
+                </li>
+                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  Ionic
+                </li>
+              </ul>
+              <ul class="">
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  Created a plan to meet compliance and security standards for handling financial information
+                </li>
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  Designed a user experience based on the requirements of the client
+                </li>
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  Implemented a workflow for loan applications, including file upload, an APR calculator, generated
+                  fee schedule related calculations
+                </li>
+              </ul>
+            </section>
 
             <section class="mb-4.5 break-inside-avoid">
               <header>
@@ -165,11 +211,6 @@
               </li>
             </ul>
             <ul class="">
-              <li class="mt-2.1 text-md text-gray-700 leading-normal">
-                <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
-                Responsible for ensuring security of client data as it pertains to hybrid mobile apps (i.e. session and
-                data retention, network requests, debugging logs)
-              </li>
               <li class="mt-2.1 text-md text-gray-700 leading-normal">
                 <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
                 Led front-end development on an existing Ionic / Angular.js project. Transitioned us to GraphQL,
@@ -285,6 +326,113 @@
             </ul>
           </section>
 
+          <section class="mb-4.5 break-inside-avoid">
+            <header>
+              <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                <a href="https://www.youtube.com/channel/UCxY5vSPjIcivCsEnGhpiHgQ" class="group" target="_blank">
+                  ScheduleAide
+                  <span
+                          class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                </a>
+              </h3>
+              <p class="leading-normal text-md text-gray-650">
+                2012 - 2014 | Founder
+              </p>
+            </header>
+            <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6 mt-1.5 mb-0.5">
+              <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                Angular.js
+              </li>
+            </ul>
+            <ul class="">
+              <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Worked with a small team to build a tool to automate marketing of availability for professional service providers
+              </li>
+              <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Built out a plan using lean canvas and tested assumptions using the scientific method
+              </li>
+              <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                Generated attention from 500 Startups and passed first round of Y Combinator application, though we fell
+                short as we were pre-revenue
+              </li>
+            </ul>
+          </section>
+
+        </section>
+      </div>
+      <!-- end Column -->
+
+    </div>
+    <!-- end Page -->
+
+    <hr class="mt-4.5 mb-4.5 print:hidden" />
+
+    <!-- Page -->
+    <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white h-letter" style="height: 800px">
+
+      <!-- Name -->
+      <header class="flex items-center mb-8 md:mb-11 print:visible invisible">
+        <div   class="initials-container mr-5 text-base leading-none text-white bg-green-500 font-medium print:bg-black px-3"
+               style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
+          <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">M</div>
+          <div class="text-center initial">D</div>
+        </div>
+        <h1 class="text-2xl font-semibold text-gray-750 pb-px">
+          Matthew Doak
+        </h1>
+      </header>
+      <!-- end Name -->
+
+
+      <!-- Column -->
+      <div class="md:col-count-1 print:col-count-1 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto">
+
+        <section class="mt-8 first:mt-0">
+          <div class="break-inside-avoid">
+            <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
+              EXPERIENCE
+            </h2>
+
+            <section class="mb-4.5 break-inside-avoid">
+              <header>
+                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
+                  <a href="https://www.youtube.com/channel/UCxY5vSPjIcivCsEnGhpiHgQ" class="group" target="_blank">
+                    One World United
+                    <span
+                            class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in">↗</span>
+                  </a>
+                </h3>
+                <p class="leading-normal text-md text-gray-650">
+                  2009 - 2010 | Team Lead, Project Manager, Business Analyst
+                </p>
+              </header>
+              <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6 mt-1.5 mb-0.5">
+                <li class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                  Angular.js
+                </li>
+              </ul>
+              <ul class="">
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  Started as a junior developer, was promoted in short order to lead developer and eventually took over
+                  the role of my boss to lead a team of 8 developers and designers
+                </li>
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  Responsibilities included translating business requirements to technical specifications, timeline
+                  planning and delegation, and supporting the developers and designers in implementing the requirements
+                </li>
+                <li class="mt-2.1 text-md text-gray-700 leading-normal">
+                  <span class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">›</span>
+                  As we continued to grow, I transitioned to a full-time business analyst role and worked directly with
+                  a dedicated project manager to ensure the team had a clear vision and agreed on a project plan
+                </li>
+              </ul>
+            </section>
+          </div>
         </section>
 
         <hr class="mt-4.5 mb-4.5" />
@@ -295,7 +443,7 @@
 
         <section class="mt-8 first:mt-0">
 
-          <!-- To keep in the same column -->
+        <!-- To keep in the same column -->
           <div class="break-inside-avoid">
 
             <h2 class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
@@ -329,31 +477,31 @@
               <div class="my-3.2 last:pb-1.5">
                 <ul class="flex flex-wrap text-md leading-relaxed -mr-1.6 -mb-1.6">
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     React.js
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     TypeScript
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     GraphQL
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     Node.js
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     UX Design
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     Hybrid Mobile Development
                   </li>
                   <li
-                    class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+                          class="px-2.5 mr-1.6 mb-1.6 text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
                     CI / CD
                   </li>
                 </ul>
@@ -395,13 +543,8 @@
           </div>
 
         </section>
-
       </div>
-      <!-- end Column -->
-
     </div>
-    <!-- end Page -->
-
   </main>
 
 </body>
