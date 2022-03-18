@@ -16,7 +16,17 @@
   <style>
     @media print {
       .h-letter {
-        height: 1270px;
+        margin-bottom: 400px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .h-letter {
+        height: auto;
+      }
+
+      .secondary-header {
+        display: none;
       }
     }
   </style>
@@ -374,7 +384,7 @@
     <div class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white h-letter" style="height: 800px">
 
       <!-- Name -->
-      <header class="flex items-center mb-8 md:mb-11 print:visible invisible">
+      <header class="flex items-center mb-8 md:mb-11 print:visible invisible secondary-header">
         <div   class="initials-container mr-5 text-base leading-none text-white bg-green-500 font-medium print:bg-black px-3"
                style="padding-bottom: 0.6875rem; padding-top: 0.6875rem; /*11px*/">
           <div class="initial text-center" style="padding-bottom: 0.1875rem; /*3px*/">M</div>
